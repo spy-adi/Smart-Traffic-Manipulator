@@ -37,3 +37,5 @@ Knowledge Base Enhancement: AI models can automatically analyze and categorize s
 Data-driven Insights: AI algorithms can mine support data to generate valuable insights and trends about the application's performance, user behavior, and areas for improvement. Support leads can leverage these insights to identify recurring issues, optimize support processes, and provide feedback for product enhancements.
 
 Continuous Learning and Improvement: AI models can learn from historical support data, user interactions, and resolution outcomes. This enables ongoing refinement and improvement of the support processes, enabling support leads to provide increasingly efficient and effective assistance to users.
+
+https://colab.research.google.com/drive/1BZ_8MGmsTJbaCmk9ZaEWeLphJvfnikNV?usp=sharing
