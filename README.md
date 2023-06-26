@@ -55,3 +55,8 @@ function isStringOfNumbers(str) {
 
   return true;
 }
+
+function removeHtmlTags(str) {
+  return str.replace(/<[^>]*>/g, '');
+}
+
