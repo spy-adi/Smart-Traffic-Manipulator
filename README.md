@@ -39,3 +39,19 @@ Data-driven Insights: AI algorithms can mine support data to generate valuable i
 Continuous Learning and Improvement: AI models can learn from historical support data, user interactions, and resolution outcomes. This enables ongoing refinement and improvement of the support processes, enabling support leads to provide increasingly efficient and effective assistance to users.
 
 https://colab.research.google.com/drive/1BZ_8MGmsTJbaCmk9ZaEWeLphJvfnikNV?usp=sharing
+
+function isStringOfNumbers(str) {
+  // Check if the string length is 10
+  if (str.length !== 10) {
+    return false;
+  }
+
+  // Check if each character in the string is a number
+  for (let i = 0; i < str.length; i++) {
+    if (isNaN(parseInt(str[i]))) {
+      return false;
+    }
+  }
+
+  return true;
+}
