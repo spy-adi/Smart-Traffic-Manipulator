@@ -60,3 +60,24 @@ function removeHtmlTags(str) {
   return str.replace(/<[^>]*>/g, '');
 }
 
+{
+  "appenders": {
+    "file": {
+      "type": "file",
+      "filename": "logs/app.log",
+      "maxLogSize": 10485760,
+      "backups": 3,
+      "compress": true
+    },
+    "console": {
+      "type": "console"
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": ["file", "console"],
+      "level": "debug"
+    }
+  }
+}
+
