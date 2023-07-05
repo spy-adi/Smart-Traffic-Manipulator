@@ -83,3 +83,33 @@ function removeHtmlTags(str) {
 
 https://colab.research.google.com/drive/1wmOqK_TRpd-pVvpJpkSsmikO1d5Y13r5?usp=sharing
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Example</title>
+</head>
+<body>
+    <h1>Filter Example</h1>
+
+    <form action="/filter" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="books">Books</option>
+        </select>
+
+        <button type="submit">Apply Filter</button>
+    </form>
+
+    <!-- Display the filtered results here -->
+    <div id="results">
+        <!-- Results will be populated dynamically using Thymeleaf -->
+    </div>
+</body>
+</html>
+
