@@ -173,3 +173,34 @@ public class FilterController {
 </body>
 </html>
 
+// Get the search input field and table
+var searchInput = document.getElementById("searchInput");
+var table = document.getElementById("myTable");
+var rows = table.getElementsByTagName("tr");
+
+// Add an event listener to the search input field
+searchInput.addEventListener("keyup", function() {
+  var filter = searchInput.value.toLowerCase();
+
+  // Loop through all table rows, hide those that don't match the search query
+  for (var i = 0; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName("td");
+    var match = false;
+
+    // Loop through all table cells of the current row
+    for (var j = 0; j < cells.length; j++) {
+      var cell = cells[j];
+      if (cell.innerHTML.toLowerCase().indexOf(filter) > -1) {
+        match = true;
+        break;
+      }
+    }
+
+    // Show or hide the row based on the match
+    if (match) {
+      rows[i].style.display = "";
+    } else {
+      rows[i].style.display = "none";
+    }
+  }
+});
