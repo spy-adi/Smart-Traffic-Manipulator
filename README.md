@@ -152,3 +152,24 @@ public class FilterController {
     }
 }
 
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Filtered Results</title>
+</head>
+<body>
+    <h1>Filtered Results</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+        </tr>
+        <tr th:each="item : ${items}">
+            <td th:text="${item.name}"></td>
+            <td th:text="${item.category}"></td>
+        </tr>
+    </table>
+</body>
+</html>
+
