@@ -113,3 +113,42 @@ https://colab.research.google.com/drive/1wmOqK_TRpd-pVvpJpkSsmikO1d5Y13r5?usp=sh
 </body>
 </html>
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Controller
+public class FilterController {
+
+    @GetMapping("/filter")
+    public String filterResults(@RequestParam(value = "name", required = false) String name,
+                                @RequestParam(value = "category", required = false) String category,
+                                Model model) {
+
+        // Simulated data source
+        List<Item> items = new ArrayList<>();
+        items.add(new Item("Item 1", "electronics"));
+        items.add(new Item("Item 2", "clothing"));
+        items.add(new Item("Item 3", "books"));
+
+        // Apply the filter logic
+        List<Item> filteredItems = new ArrayList<>();
+        for (Item item : items) {
+            if ((name == null || item.getName().contains(name)) &&
+                    (category == null || item.getCategory().equals(category))) {
+                filteredItems.add(item);
+            }
+        }
+
+        // Add the filtered items to the model
+        model.addAttribute("items", filteredItems);
+
+        // Return the view to display the filtered results
+        return "results";
+    }
+}
+
