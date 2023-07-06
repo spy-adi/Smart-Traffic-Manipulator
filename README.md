@@ -224,3 +224,46 @@ https://codepen.io/ainalem/pen/xxwxxRE
     <circle class="circle circle3" r="1.9" cy="50.7" cx="57.3" />
   </svg>
 </div>
+
+}
+.chat-bubble {
+  cursor: pointer;
+  position: relative;
+}
+.bubble {
+  transform-origin: 50%;
+  transition: transform 500ms cubic-bezier(0.17, 0.61, 0.54, 0.9);
+}
+.line {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2.75;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 90;
+  stroke-dashoffset: -20;
+}
+.line2 {
+  stroke-dasharray: 67 87;
+  stroke-dashoffset: -18;
+}
+.circle {
+  fill: #ffffff;
+  stroke: none;
+  transform-origin: 50%;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active .bubble {
+  transform: translateX(24px) translateY(4px) rotate(45deg);
+}
+.active .line1 {
+  stroke-dashoffset: 21;
+}
+.active .line2 {
+  stroke-dashoffset: 30;
+}
+.active .circle {
+  transform: scale(0);
+}
