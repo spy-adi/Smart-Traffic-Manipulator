@@ -204,3 +204,5 @@ searchInput.addEventListener("keyup", function() {
     }
   }
 });
+
+https://codepen.io/ainalem/pen/xxwxxRE
