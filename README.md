@@ -221,6 +221,6 @@ abc
     <circle class="circle circle1" r="1.9" cy="50.7" cx="42.5" />
     <circle class="circle circle2" cx="49.9" cy="50.7" r="1.9" />
     <circle class="circle circle3" r="1.9" cy="50.7" cx="57.3" />
-  </svg>
+  </sv>
 </div>
 abc
