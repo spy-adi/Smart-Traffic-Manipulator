@@ -205,8 +205,7 @@ searchInput.addEventListener("keyup", function() {
   }
 });
 
-https://codepen.io/ainalem/pen/xxwxxRE
-
+abc
 <div class="chat" onclick="this.classList.toggle('active')">
   <div class="background"></div>
   <svg class="chat-bubble" width="100" height="100" viewBox="0 0 100 100">
@@ -224,4 +223,4 @@ https://codepen.io/ainalem/pen/xxwxxRE
     <circle class="circle circle3" r="1.9" cy="50.7" cx="57.3" />
   </svg>
 </div>
-
+abc
